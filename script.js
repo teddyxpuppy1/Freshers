@@ -1,10 +1,10 @@
 // Predefined valid roll numbers with names
 const rollNumberData = {
-    '101': 'John Doe',
-    '102': 'Jane Smith',
-    '103': 'Michael Brown',
-    '104': 'Emily Davis',
-    '105': 'David Johnson'
+    '24A81A4401': 'ALLAVARAPU LAKSHMI RATNA MALLIKA',
+    '24A81A4402': 'ABDUL RAWOOF',
+    '24A81A4403': 'ADABALA MANI VENKATA NAGA MAHESH',
+    '24A81A4404': 'ALLURI RAVI TEJA VARMA',
+    '24A81A4405': 'ANDE PAVITHRA'
 };
 
 // Handle form submission
