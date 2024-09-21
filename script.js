@@ -7,6 +7,11 @@ const rollNumberData = {
     '24A81A4405': 'ANDE PAVITHRA'
 };
 
+// Convert input to uppercase on each keystroke
+document.getElementById('rollNumber').addEventListener('input', function () {
+    this.value = this.value.toUpperCase();
+});
+
 // Handle form submission
 document.getElementById('rollNumberForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
