@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshers Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            background-image: url('fresh.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 40px 0 20px; /* Added top margin to move it down */
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: gold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 50px; /* This moves the button slightly down */
+        }
+
+        .cta-button:hover {
+            background-color: #e50914;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #141414;
+        }
+
+        footer p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 style="color: gold;">Welcome Freshers!</h1>
+            <p>You are cordially invited to join us for an unforgettable Freshers' Event.</p>
+            <!-- Button that redirects to main.html -->
+            <a href="main.html" class="cta-button">Join the Fun!</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Freshers Event | Organized by Sri Vasavi ENGG</p>
+    </footer>
+
+</body>
+</html>

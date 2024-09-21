@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresher Invitation</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+        /* Invitation Container */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Dark background with transparency */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+background-image: url('free.png'); /* Set the background image for the body */
+            background-size: cover; /* Cover the entire background */
+            background-position: center; /* Center the background image */
+        }
+
+        h1 {
+            font-size: 26px;
+            color: white; /* Change text color to white */
+            margin-bottom: 20px;
+        }
+
+        /* Highlight Styles for Date, Time, and Venue */
+        .highlight {
+            font-size: 20px;
+            font-weight: bold;
+            color: gold; /* Red shade for emphasis */
+            margin: 10px 0;
+        }
+
+        .highlight span {
+            display: block;
+            font-size: 18px;
+            color: #fff; /* Change text color to white */
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome, <span id="studentName"></span>!</h1>
+        <p style="color: gold;">The wait is over! 🌟 It's time to shake off the nerves and dive into an unforgettable night of fun, music, and celebration! 🎶💃</p>
+
+        <p style="color: white;">You’re invited to the 2024 Freshers Party—where new friendships begin, and memories are made. This is your night to shine, let loose, and get to know your fellow classmates in the most epic way possible!</p>
+
+        <p class="highlight">Date: 28-09-2024</p>
+        <p class="highlight">Time: 1 PM - 4:30 PM</p>
+        <p class="highlight">Venue: Open Auditorium</p>
+
+        <p style="color: white;">Join us for an incredible night! Put on your dancing shoes and let’s make it unforgettable! 🎉</p>
+    </div>
+
+    <script>
+        // Get data passed via POST
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const name = urlParams.get('name');
+            document.getElementById('studentName').textContent = name ? decodeURIComponent(name) : 'Student';
+        };
+    </script>
+
+</body>
+</html>
