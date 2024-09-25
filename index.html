@@ -92,7 +92,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1 style="color: gold;">Welcome Freshers!</h1>
-            <video autoplay controls loop>
+            <video id="fresherVideo" autoplay controls>
                 <source src="sammm.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -106,5 +106,12 @@
         <p>© 2024 Freshers Event | Organized by Sri Vasavi ENGG</p>
     </footer>
 
+    <script>
+        // Add an event listener for the end of the video to pause it when completed
+        var video = document.getElementById('fresherVideo');
+        video.addEventListener('ended', function() {
+            video.pause(); // Pause the video when it finishes
+        });
+    </script>
 </body>
 </html>
